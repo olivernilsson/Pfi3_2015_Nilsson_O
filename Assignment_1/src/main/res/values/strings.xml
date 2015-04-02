@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Assignment 1</string>
+
+    <string name="RandomQuotes">Random Quotes!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Button">Next Quote</string>
+    <string name="quote1">The saddest aspect of life right now is that science gathers knowledge faster than society gathers wisdom.</string>
+    <string name="quote2">I\'ve failed over and over and over again in my life. And that is why I succeed.</string>
+    <string name="quote3">There is nothing noble in being superior to your fellow men. True nobility lies in being superior to your former self.</string>
+    <string name="error">Something went wrong!</string>
+</resources>

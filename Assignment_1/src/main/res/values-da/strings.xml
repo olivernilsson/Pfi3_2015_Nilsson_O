@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="Button">Næste citat</string>
+    <string name="RandomQuotes">Tilfældige citater</string>
+    <string name="action_settings">Indstillinger</string>
+    <string name="app_name">Opgave 1</string>
+    <string name="error">Noget gik galt</string>
+    <string name="quote1">Det sørgeligste aspekt af livet lige nu er, at videnskaben samler viden hurtigere end samfundet samler visdom</string>
+    <string name="quote2">Jeg har undladt igen og igen og igen i mit liv. Og det er derfor, jeg lykkes</string>
+    <string name="quote3">Der er intet ædelt i at være overlegen i forhold til dine medmennesker. Ægte adel ligger i at være overlegen i forhold til din tidligere self</string>
+
+</resources>
