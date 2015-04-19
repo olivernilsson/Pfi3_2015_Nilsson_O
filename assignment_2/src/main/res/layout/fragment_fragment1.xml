@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="Home"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:gravity="top">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/startHeader"
+                android:id="@+id/textView2"
+                android:background="@android:color/holo_red_light"
+                android:padding="10dp"
+                android:textSize="30sp"
+                android:textColor="#ffffffff" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:gravity="bottom">
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/search_btn"
+                    android:src="@drawable/reseplanerareikon"
+                    android:layout_gravity="center_vertical|bottom"
+                    android:layout_weight="1"
+                    android:maxWidth="48dp"
+                    android:maxHeight="48dp"
+                    android:adjustViewBounds="false"
+                    android:cropToPadding="false"
+                    android:scaleType="center"
+                    android:background="#ffffffff"
+                    />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton"
+                    android:layout_gravity="center_vertical|bottom"
+                    android:baselineAlignBottom="false"
+                    android:src="@drawable/tidtabellikon"
+                    android:layout_weight="1"
+                    android:scaleType="center"
+                    android:maxWidth="48dp"
+                    android:maxHeight="48dp"
+                    android:background="#ffffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_horizontal"
+                android:layout_gravity="top">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/reseplanerare"
+                    android:id="@+id/textView5"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical|top"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/tidtabeller"
+                    android:id="@+id/textView3"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical|top"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:gravity="bottom" >
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="48dp"
+                    android:id="@+id/imageButton3"
+                    android:src="@drawable/hallplatssokikon"
+                    android:layout_gravity="center_vertical|bottom"
+                    android:background="#ffffffff"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="48dp"
+                    android:id="@+id/imageButton4"
+                    android:layout_gravity="center_vertical|bottom"
+                    android:baselineAlignBottom="false"
+                    android:src="@drawable/biljetterikon"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="fill_horizontal"
+                android:layout_gravity="top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/hallplatssok"
+                    android:id="@+id/textView4"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical|top"
+                    android:paddingRight="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/biljetter"
+                    android:id="@+id/textView"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical|top"
+                    android:paddingRight="20dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
