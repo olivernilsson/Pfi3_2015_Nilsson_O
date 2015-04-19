@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">assignment_2</string>
+    <string name="action_settings">Inställningar</string>
+    <string name="reseplanerare">Reseplanerare</string>
+    <string name="tidtabeller">Tidtabeller</string>
+    <string name="hallplatssok">Hållplatssök</string>
+    <string name="biljetter">Biljetter</string>
+    <string name="startHeader">Skånetrafiken</string>
+    <string name="rpHeader">Reseplaneraren</string>
+    <string name="plannerTextFrom">Från:</string>
+    <string name="plannerTextTo">Till:</string>
+    <string name="plannerTextTime">Tid/Datum</string>
+    <string name="plannerTextRightNow">Just nu</string>
+    <string name="plannerTextTrafficType">Trafikslag</string>
+    <string name="plannerTextFavourites">Favoriter &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; > </string>
+    <string name="plannerTextWatchlist">Bevakningar &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; > </string>
+    <string name="iconShuffle">shuffleicon</string>
+    <string name="plannerEditButton1">Redigera</string>
+    <string name="plannerEditButton2">Redigera</string>
+    <string name="radioButtonArrival">Ankomst</string>
+    <string name="radioButtonDeparture">Avgång</string>
+    <string name="plannerSearchButton">Sök</string>
+</resources>
