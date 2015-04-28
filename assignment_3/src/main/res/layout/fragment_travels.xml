@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.oliver.assignment_3.Travels"
+    android:background="#ffffffff">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/textViewFran"
+                android:id="@+id/textViewFran"
+                android:textColor="#ffff0505"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:background="#ffffffff"
+                android:paddingBottom="7dip" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:layout_gravity="center_horizontal"
+                android:spinnerMode="dropdown"
+                android:entries="@array/station"
+                android:layout_marginLeft="7dip"
+                android:layout_marginRight="7dip"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginBottom="7dip" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/textViewTill"
+                android:id="@+id/textViewTill"
+                android:textColor="#ffff0505"
+                android:paddingLeft="15dp"
+                android:background="#ffffffff"
+                android:paddingBottom="7dip"
+                android:paddingTop="7dip" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner2"
+                android:layout_gravity="center_horizontal"
+                android:spinnerMode="dropdown"
+                android:entries="@array/station"
+                android:layout_marginLeft="7dip"
+                android:layout_marginRight="7dip"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="7dip" />
+
+            <ExpandableListView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/expandableListView"
+                android:layout_gravity="left|top"
+                android:groupIndicator="@null"
+                android:divider="#17000000"
+                android:dividerHeight="@dimen/customDivider"
+                android:background="#ffffff"/>
+        </LinearLayout>
+
+</FrameLayout>
