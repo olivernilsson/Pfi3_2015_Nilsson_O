@@ -17,7 +17,7 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Home_fragment extends Fragment {
+public class Home_fragment extends Fragment implements AdapterView.OnItemClickListener {
 
     public static ArrayList<Planet> planets = new ArrayList<Planet>();
 
@@ -54,27 +54,28 @@ public class Home_fragment extends Fragment {
 
         gridview.setAdapter(new ImageAdapter(getActivity(), planets));
 
-        gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View v,
-                                    int position, long id) {
+        gridview.setOnItemClickListener(this);
 
-                Info_fragment iF = new Info_fragment();
-
-                Bundle bundle = new Bundle();
-                bundle.putSerializable("planet",planets.get(position));
-                iF.setArguments(bundle);
-
-                FragmentManager fm = getFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.container, iF);
-                ft.addToBackStack(null);
-                ft.commit();
-
-            }
-
-        });
         return v;
+
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View v,
+                            int position, long id) {
+
+        Info_fragment iF = new Info_fragment();
+
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("planet",planets.get(position));
+        iF.setArguments(bundle);
+
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.container, iF);
+        ft.addToBackStack(null);
+        Log.i("BackStack","true");
+        ft.commit();
 
     }
 }

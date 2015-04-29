@@ -15,7 +15,7 @@ import org.w3c.dom.Text;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Info_fragment extends Fragment {
+public class Info_fragment extends Fragment implements View.OnClickListener {
 
 
     public Info_fragment() {
@@ -47,4 +47,8 @@ public class Info_fragment extends Fragment {
     }
 
 
+    @Override
+    public void onClick(View v) {
+
+    }
 }

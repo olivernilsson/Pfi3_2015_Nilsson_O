@@ -34,6 +34,7 @@ public class Popup_fragment extends DialogFragment implements View.OnClickListen
         View v = inflater.inflate(R.layout.popup_fragment, container, false);
         int style = DialogFragment.STYLE_NO_TITLE, theme = 0;
         setStyle(style, theme);
+
         getDialog().getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 
         TextView t1 = (TextView) v.findViewById(R.id.popup_title);

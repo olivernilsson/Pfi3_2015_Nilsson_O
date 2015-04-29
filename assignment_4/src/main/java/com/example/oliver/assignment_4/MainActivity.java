@@ -1,5 +1,6 @@
 package com.example.oliver.assignment_4;
 
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -8,6 +9,7 @@ import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,6 +25,7 @@ public class MainActivity extends ActionBarActivity {
 
 
         if (savedInstanceState == null) {
+
             getFragmentManager().beginTransaction()
                     .replace(R.id.container, new Home_fragment())
                     .commit();
@@ -33,7 +36,8 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -45,14 +49,16 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+
+        if(id == R.id.action_settings){
+           return true;
         }
 
         if(id == R.id.info_button){
             FragmentManager fn = getFragmentManager();
             Popup_fragment pf = new Popup_fragment();
             pf.show(fn, "PopUp");
+            return true;
         }
 
         return super.onOptionsItemSelected(item);
@@ -74,13 +80,19 @@ public class MainActivity extends ActionBarActivity {
         }
     }
 
+
     @Override
     public void onBackPressed() {
 
-        setContentView(R.layout.activity_main);
-        FragmentManager fm = getFragmentManager();
-        FragmentTransaction ft = fm.beginTransaction();
-        ft.replace(R.id.container, new Home_fragment());
-        ft.commit();
+    int count = getFragmentManager().getBackStackEntryCount();
+
+    if (count == 0) {
+        super.onBackPressed();
+        //additional code
+    } else {
+        getFragmentManager().popBackStack();
     }
+
+}
+
 }
